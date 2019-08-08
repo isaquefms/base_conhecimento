@@ -1,0 +1,33 @@
+### Scrum
+
+Vídeo com visão geral: https://www.youtube.com/watch?v=XfvQWnRgxG0
+
+# Pilares Fundamentais
+	1 - Transparência: Transparência dos processos, registros de entrega e status.
+	2 - Inspeção: Inspeção contante de tudo o que está sendo feito.
+	3 - Adaptação: Adaptação, tanto do processo, quanto do produto às mudanças.
+
+# Práticas Fundamentais
+	1 - Papeis: Scrum Master, Product Owner e Dev Team.
+	2 - Eventos: Sprint Planning, Execução da Sprint, Daily Scrum, Revisão da Sprint e Retrospectiva da Sprint
+	3 - Artefatos: Product Backlog, Sprint Backlog e Incremento/Entrega
+
+	Visão do Produto: O Product Owner é responsável por essa visão. Ela provê o que ele quer e aonde quer chegar.
+	Product Backlog: Desmenbramento da visão em funcionalidades necessárias. Essas funcionalidades são ordenadas em ordem de importância (aquilo que agrega maior valor ao produto).
+	Sprints: Período de tempo em que uma tarefa do Product Backlog será executada. O ideal é que as Sprints tenham tempo fixo.
+	Sprint Planning: Reunião de planejamento da sprint. Nesse ponto é criado o backlog da sprint. Nesse período são selecionadas as funcionalidades que podem ser concluídas no tempo da Sprint de acordo com a ordem de importância.
+	Daily Scrum: Todo dia há uma reunião na equipe onde cada mêmbro deve responder a três perguntas básicas:
+		1 - O que eu fiz ontem ?
+		2 - O que eu vou fazer hoje ?
+		3 - Existe algum impedimento que não permita a mim ou a o time atingir o objetivo da sprint ?
+
+	# Ferramentas que podem auxiliar:
+		Burndown Chart: Gráfico que relaciona os itens a fazer (y) com o tempo da Sprint (x). O Ideal é que o gráfico tenha uma reta decrescente.
+
+		Kanban Board: Quando que permite verificar a transparência do processo. Contém colunas colunas como Backlog, Fazendo, Validação e Concluído.
+
+	Sprint Review: Nessa atividade há a validação e verificação se o produto está sendo construído de acordo com o necessário e esperado. Nesse ponto surgem mudanças e o product backlog é atualizado.
+
+	Restropectiva: Verificação daquilo que foi feito no processo. Aqui é verificado o que foi feito que foi positivo e o que foi negativo. Aqui observamos o que devemos melhorar o que devemos parar de fazer.
+
+	Visão geral: A visão do produto é transformada na Backlog do Produto. Do backlog de produtos é gerada a Sprint Backlog, onde as funcionalidades são desmembradas em tarefas menores para implementação da funcionalidade. A Sprint Backlog é selecionada de acordo com a visão da equipe daquilo que se é possível entregar no período predefinido da Sprint. Ao término da Sprint temos uma funcionalidade entregue.

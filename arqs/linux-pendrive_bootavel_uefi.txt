@@ -1,0 +1,11 @@
+## Criação de Pendrive Uefi Bootavel
+
+Dependências: gparted e p7zip
+
+1 - Visualize o pendrive montado e formatado em fat32
+	digite mount
+
+2 - Copie o sistema para o pendrive
+	7z x path/da/iso -o/path/do/pendrive
+
+3 - Abra o gparted no modo gráfico e adicione os sinalizadores "boot" e "lba" na unidade.

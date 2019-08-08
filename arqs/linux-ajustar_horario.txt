@@ -1,0 +1,7 @@
+### Ajustando o horário no Arch linux
+
+# Setar o ntp:
+	- sudo timedatectl set-ntp true
+
+# Ajustar o horário:
+	- sudo hwclock --systohc

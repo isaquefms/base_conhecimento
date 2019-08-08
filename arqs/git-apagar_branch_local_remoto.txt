@@ -1,0 +1,7 @@
+### Apagar branch local e remotamente
+
+# Apagar a branch
+	git branch -D <nome_branch>
+
+# Apagar a branch remotamente
+	git push <nome_origin> <nome_branch> --delete

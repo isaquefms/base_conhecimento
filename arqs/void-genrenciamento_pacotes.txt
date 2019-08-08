@@ -1,0 +1,22 @@
+### Gerenciamento de Pacotes no Void Linux
+
+# Sincronizar com o repositório remoto
+	- # xbps-install -S
+
+# Instalar ou atualizar um único pacote
+	- # xbps-install -S pkg
+
+# Atualizar o sistema
+	- # xbps-install -Su
+
+# Listar pacotes instalados
+	- # xbps-query -l
+
+# Remover um único pacote
+	- # xbps-remove pkg
+
+# Removendo um único pacote e os pacotes que foram instalados como dependências
+	- # xbps-remove -R pkg
+
+# Removendo todos os pacotes orfãos e limpando o cache
+	- # xbps-remove -Oo

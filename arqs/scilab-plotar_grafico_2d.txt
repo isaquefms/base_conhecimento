@@ -1,0 +1,7 @@
+### Como plotar um gráfico 2d no scilab.
+
+1 - Crie um intervalo para variável indepentente.
+	Ex: x=[0:1:1000]; // De 0 a 1000 adicionando 1.
+2 - Descreva a variável dependente atraves de sua relação com a variável independente.
+	Ex: y=x^2; // Polinômio, por exemplo.
+3 - Execute o comando plot passando as duas variáveis como parâmetro.

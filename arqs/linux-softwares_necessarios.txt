@@ -1,0 +1,12 @@
+### Softwares necessários
+
+- Sublime
+- Git
+- JabRef
+- Latex
+- TexStudio
+- Scilab
+- Telegram
+- Mozilla
+- Spotify
+- Gnome To Do

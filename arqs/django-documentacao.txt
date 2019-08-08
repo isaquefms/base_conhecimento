@@ -1,0 +1,94 @@
+### Documentação Django
+
+# Requisitos: Python3, pip, django, pycharm.
+
+# O pip vem juntamente com o python em versões recentes.
+
+# Precisamos utilizar uma virtual env para isolar no ambiente de desenvolvimento.
+
+# Para criar um ambiente virtual utilizamos:
+	- python3 -m venv <nome_env>
+
+# Para entrar no ambiente utilizamos:
+	- source <nome_env>/bin/activate
+
+# Para instalar o django utilizamos:
+	- pip install django
+
+# Precisamos buscar pelo pycharm no repositório da distribuição.
+
+# Para criar um projeto django devemos usar:
+	- django-admin startproject <nome_projeto> .
+	- O ponto no final evita a criação de sub pastas.
+
+# A maioria dos servidores web funcionam no modelo request-response. No caso o django recebe uma request do navegador e envia uma reponse.
+
+# No diretório Base/Base_Conhecimento/images temos uma imagem demonstrando o funcionamento do request-response do django.
+
+# Um projeto django possui varias apps.
+
+# Para iniciar uma app django digitamos:
+	- python3 manage.py startapp contas
+
+# Assim que criamos uma nova app devemos ir no settings e em installed_apps adicionar a nossa aplicação com uma virgula no final.
+
+# Para criar o nosso banco de dados fazemos:
+	- python3 manage.py migrate
+
+# Para rodar a aplicação fazemos:
+	- python3 manage.py runserver
+
+# Para criar um superusuário na nossa aplicação fazemos:
+	- python3 manage.py createsuperuser
+
+# Esquematização das urls. O arquivo urls.py faz a resolução dos endereços do meu programa.
+
+# Uma view contém um trecho de código que possui os controles da página que o usuário está tentando abrir.
+
+# Quando desejamos retornar um template trabalhamos com a função render. A função retorna a response e também uma string com o nome da template.
+
+# Por padrão o django espera que tenhamos uma pasta chamada templates dentro da nossa app.
+
+# Ele espera também que dentro da nossa pasta templates tenhamos uma pasta com o nome da app.
+	- Ex: app/templates/app
+
+# Models são as definições dos dados que queremos persistir no nosso banco de dados. Normalmente um model é uma tabela no banco de dados. Normalmente são classes.
+
+# Assim que fizermos uma modificação dos nossos modelos precisamos executar o comando:
+	- python3 manage.py makemigrations
+Esse comando é responsável pro preparar as migrações para o banco de dados.
+
+# Após executar o makemigrations devemos executar o migrate.
+
+# Podemos gereciar nossos modelos pelo django admin fazendo o uso do register.
+	- admin.site.register(Categoria)
+
+# Para exibirmos o nome correto no plural correto na django admin precisamos adicionar:
+	- class Meta:
+		verbose_name_plural = 'nome_plural'
+
+# Para exibir o nome correto quanto ao objeto podemos utilizar o seguinte método:
+	- def __str__(self):
+		return self.<campo_de_descrição>
+
+# Podemos passar variáveis para o nosso contexto do template com a função render.
+
+# Para manipular uma variável dentro da página html utilizamos a linguagem fornecida pelo django chamada jinja.
+
+# Exibição de uma variável:
+	- {{nome_variavel}}
+
+# Para ter acesso a uma lista e juntamente com ela executar um loop procedemos da seguinte forma:
+	- {% for varialvel_iterativa in lista%}
+		{{variavel_iterativa}}
+	  {% endfor %}  				}
+
+# Sempre ficar atento a documentação.
+
+# Um manager traz operações de banco de dados.
+
+# Para facilitar a implementação de formulários podemos utilizar a classe ModelForm.
+
+# Podemos passar urls dinâmicamente utilizando;
+	- {% url 'url_nova' %}
+Para tal precisamos dar um nome para a url.

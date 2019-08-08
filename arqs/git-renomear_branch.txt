@@ -1,0 +1,13 @@
+### Renomear uma branch localmente e remotamente
+
+# Troque para a branch local que você deseja renomear.
+	git checkout <nome_antigo_branch>
+
+# Renomear a branch local para o novo nome.
+	git branch -m <novo_nome_branch>
+
+# Deletar a branch antiga no repositório remoto.
+	git push origin --delete <nome_antigo_branch>
+
+# Faça o push da branch com o novo nome.
+	git push origin -u <novo_nome_branch>

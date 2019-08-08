@@ -1,0 +1,20 @@
+### Citações Indiretas, Diretas e Citações de Citações
+
+# Citação direta ou textual ocorre quando as palavras do autor em questão são transcritas exatamente, sem alterações.
+	- Citação Direta Curta: quando não ultrapassam 3 linahs. Elas fazem parte do texto, mas precisam estar entre aspas.
+
+	- Citação Direta Longa: Esse tipo de citação ocorre qaundo possuem mais de 3 linhas. Estas são destacadas com recuo de 4 cm, fonte tamanho 10 e não se utiliza aspas. Deve ser deixado um espaço de 1,5 entre o texto e essa citação. Ao final deve ser acrescentado o sobrenome do autor em caixa alta, ano, página. Obs: Indica-se com reticências entre colchetes [...] a suspensão de alguma parte do texto original. Os comentários ou observações também são feitos entre colchetes.
+
+# Citação Indireta ou Livre: É quando expressamos a ideia ou pensamento de outros, através de nossas palavras. Neste caso, devemos indicar o nome do autor da seguinte forma:
+	- Citação Indireta 1: O autor pode ser citado no corpo do texto - usamos somente a primeira letra do nome em letra maiúscula mais o ano em que foi publicado o trabalho (entre parênteses).
+
+	- Citação Indireta 2: O autor pode ser citado entre parênteses - com letra maiúscula mais o ano da publicação. Ex: (KAPAN, 2001).
+
+	- Nos casos em que existem diversas obras de um mesmo autor citadas, elas serão identificadas pela data em que foram publicadas. S ehouver coincidência de ano deve ser acrescentada, após a data, uma letra sem usar espaço.
+
+# Citação de Citação: Ocorre quando há citação de uma obra sem que se tenha tido acesso a ela. Indica-se o sobrenome do autor da obra - data - seguida da expressão latina apud (citado por). E em seguida o sobrenome do autor consultado mais a data e página.
+	- Ex: Este instrumento de avaliação do desempenho dos alunos não apresenta embasamento estatístico e não pode ser provado. (MILLON, 1999 apud SISTO, 2000, p.40)
+
+	- Obs: Uma dica a respeito deste tipo de citação é: evite o seu uso excessivo. O apud não é muito bem visto aos olhos das bancas examinadoras.
+
+# Citação de Sites: Instituição, Nome site, Cidade, Ano. Disponível em: <url>. Acesso em: data.

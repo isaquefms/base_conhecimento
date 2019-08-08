@@ -1,0 +1,30 @@
+### Documentação de alguns comandos do git e gitlab.
+
+# Configurar o git
+	- git config --global user.name "<nome>"
+	- git config --global user.email "<email>"
+	- git config --global core.editor <comando_editor>
+
+# Iniciando um novo projeto:
+	- cd existing_folder
+	- git init
+	- git remote add origin <url gitlab>
+	- git add .
+	- git commit -m "<comment>"
+	- git push -u origin master
+
+# Clonar um repositório:
+	- git clone <url gitlab>
+
+# Atualizar um repositório remoto a partir de um local.
+	- git push origin <branch>
+
+# Sincronizar com um repositório remoto:
+	- git pull origin <branch>
+
+# Fazer com que o git ignore alguns arquivos:
+	- crie um arquivo no diretório do projeto chamado .gitignore (Isso mesmo, tem um ponto).
+	- adicione nesse arquivo o path dos arquivos que você quer que ele ignore.
+
+# Reportar o estado do repositório atual.
+	- git status

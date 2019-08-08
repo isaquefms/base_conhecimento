@@ -1,0 +1,4 @@
+### Criar um ambiente virtual em python
+
+# Para criar o ambiente execute o seguinte comando
+	python3 -m venv <nome_venv>

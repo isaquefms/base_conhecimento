@@ -1,0 +1,19 @@
+### Como criar um usuário e conceder permissões no MYSQL.
+
+# Verificando os usuários inseridos:
+    $ sudo mysql -u root
+    mysql> USE mysql;
+    mysql> SELECT User, Host, plugin FROM mysql.user;
+
+# Criando o usuário:
+    $ sudo mysql -u root
+    mysql> USE mysql;
+    mysql> CREATE USER 'your_system_user'@'localhost' IDENTIFIED BY 'your_system_user';
+    mysql> GRANT ALL PRIVILEGES ON <database> TO 'your_system_user'@'localhost';
+    mysql> UPDATE user SET plugin='auth_socket' WHERE User='your_system_user';
+    mysql> FLUSH PRIVILEGES;
+    mysql> exit;
+
+# Reiniciando o serviço.
+    $ service mysql restart    # init padrão.
+    $ systemctl restart mysql  # systemd.

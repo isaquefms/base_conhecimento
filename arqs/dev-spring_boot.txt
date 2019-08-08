@@ -1,0 +1,16 @@
+### Referências para a criação de aplicações Web utilizando Spring Boot e (React e Angular)
+
+# Links:
+	- https://blogg.kantega.no/webapp-with-create-react-app-and-spring-boot/ (Ensina a integrar o react e o Spring Boot)
+	- https://dzone.com/articles/integrating-spring-boot-and-react-with-spring-secu-1
+	- https://www.mkyong.com/spring-boot/spring-rest-error-handling-example/
+	- https://www.callicoder.com/spring-boot-rest-api-tutorial-with-mysql-jpa-hibernate/
+	- https://www.springboottutorial.com/spring-boot-react-full-stack-crud-maven-application (Mais usado no desafio_web)
+	- https://developer.okta.com/blog/2018/07/19/simple-crud-react-and-spring-boot
+	- https://medium.com/coding-crackerjack/spring-boot-and-reactjs-a50367d56521
+	- https://spring.io/guides/tutorials/react-and-spring-data-rest/
+	- https://www.oracle.com/technetwork/pt/articles/dsl/crud-rest-sb2-hibernate-5302424-ptb.html
+	- https://www.baeldung.com/spring-boot-angular-web
+	- https://www.baeldung.com/spring-boot-start
+	- https://www.mkyong.com/spring-boot/spring-boot-which-main-class-to-start/
+	- https://www.devmedia.com.br/primeiros-passos-com-o-spring-boot/33654

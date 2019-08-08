@@ -1,0 +1,17 @@
+### Algums comandos básicos de branchs em git.
+
+# Criar e mudar para um novo branch
+	- git checkout -b <branch>
+
+# Trocar de Branch
+	- git checkout <branch>
+
+# Unir duas branchs
+	- git checkout <branch> ~> Trocar para a branch principal.
+	- git merge <branch_secundaria>
+
+# Apagar uma branch
+	- git branch -d <branch>
+
+# Atualizar uma branch com o servidor remoto
+	- git pull origin <branch>

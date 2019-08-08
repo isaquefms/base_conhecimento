@@ -1,0 +1,7 @@
+### Realizando o Taggeamento com o Git
+
+# Realizando o Tag
+	- git tag -a v<versão> -m "<comentario>"
+
+# Subindo a Tag
+	- git push origin v<versão>

@@ -1,0 +1,8 @@
+### Gerar chave Ssh
+
+# Gerar a chave
+	- ssh-keygen -t rsa
+	- Pressione enter até gerar.
+
+# Pegar a chave
+	- cat ~/.ssh/id_rsa.pub

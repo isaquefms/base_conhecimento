@@ -1,0 +1,10 @@
+### Adicionar projeto no GitLab
+
+# Ajustar a pasta
+	- cd existing_folder
+	- git init
+	- git remote add origin <url>
+	- git remote set-url origin <url>
+	- git add .
+	- git commit -m "Initial commit"
+	- git push -u origin master

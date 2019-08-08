@@ -1,0 +1,3 @@
+### Sincronizar horário com o openntp
+
+	# ntpd -s -d

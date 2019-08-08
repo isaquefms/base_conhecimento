@@ -1,0 +1,18 @@
+### Corrigindo erro do Mysql: mysql “ERROR 1524 (HY000): Plugin ‘auth_socket’ is not loaded”
+
+# Acessar o Mysql:
+    $ mysql -u root -p
+
+# Atualizar os dados do usuário que apresentou erro:
+    mysql> use mysql;
+    mysql> update user set authentication_string=PASSWORD("<new_password>") where User='<user>';
+    mysql> update user set plugin="mysql_native_password" where User='<user>';
+    mysql> flush privileges;
+    mysql> quit;
+
+# Reiniciar o serviço:
+    $ sudo /etc/init.d/mysql stop
+    $ sudo /etc/init.d/mysql start
+    $ mysql -u root -p  # Try login to database using the user modified.
+
+Fonte: https://b14esh.com/www/mysql/phpmyadmin.html

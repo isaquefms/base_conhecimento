@@ -1,0 +1,13 @@
+### Documentação Sublime Text
+
+# Instalar o Package Controll
+	- Ctrl + Shift + p
+	- Procurar por Install Package Controll
+
+# Instalar um pacote usando o package control.
+	- Ctrl + Shift + p
+	- Install Package
+	- Procurar pelo pacote e pressionar enter.
+
+# Gerar Lorem Ipsum
+	- lorem + Tab

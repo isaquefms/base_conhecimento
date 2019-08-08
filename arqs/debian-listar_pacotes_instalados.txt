@@ -1,0 +1,4 @@
+### Listar todos os pacotes instalados no sistema.
+
+1 - Listagem pelo dpkg
+	sudo dpkg -l > arquivo.txt

@@ -1,0 +1,7 @@
+### Montar pendrive para transferência de arquivos.
+
+1 - Criar a pasta para montagem.
+	sudo mkdir -p /mnt/pen
+
+2 - Montar o pendrive na pasta com as permissões.
+	sudo mount -t vfat -o umask=0000 /dev/sdx1 /mnt/pen

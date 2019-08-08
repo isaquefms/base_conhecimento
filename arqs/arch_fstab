@@ -1,0 +1,12 @@
+# Static information about the filesystems.
+# See fstab(5) for details.
+
+# <file system> <dir> <type> <options> <dump> <pass>
+# UUID=8b7f9068-afc1-4938-ad49-09b3ad20b971
+/dev/sda7           	/         	ext4      	rw,relatime,data=ordered	0 1
+
+# UUID=186ac593-b270-4376-9267-5c37482bd316
+/dev/sda2           	none      	swap      	defaults,pri=-2	0 0
+
+# /boot/efi
+/dev/sda1		/boot/efi	vfat		umask=0077	0	1

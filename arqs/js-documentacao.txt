@@ -1,0 +1,18 @@
+### Documentação JavaScript
+
+# Imprimir algo no console:
+	- console.log("string");
+
+# O JavaScript não possui tipagem estática de variáveis.
+
+# Uma função no JavaScript é declarada da seguinte forma:
+	- function name_function(param1, param2, param3){
+		return var
+	}
+
+# Para exibir em um box no navegador utilizamos a função:
+	- alert(string);
+
+# Comentários em JavaScript
+	- linha : // Cometários
+	- bloco : /* Bloco de Comentários */

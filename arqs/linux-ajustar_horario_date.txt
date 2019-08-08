@@ -1,0 +1,13 @@
+### Ajustar data e hoŕario com o comando date
+
+# date MMddhhmmccaa
+	- MM = Mês
+	- dd = Dia
+	- hh = Hora
+	- mm = Minutos
+	- cc = Primeiras casas do ano
+	- aa = Últimas casas do ano.
+
+# Exemplo:
+	- date 080609302018
+	- 06/08/2018 09:30

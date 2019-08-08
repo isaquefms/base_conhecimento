@@ -1,0 +1,13 @@
+### Formatar Pendrive
+
+1 - Verificar a indentificação do pendrive para o sistema.
+	mount
+
+2 - Desmontar o pendrive caso o mesmo esteja montado.
+	sudo umount /dev/sdx1
+
+3 - Formatar o pendrive.
+	sudo mkfs -t vfat /dev/sdx1
+
+4 - Ejetar o pendrive.
+	sudo eject /dev/sdx1

@@ -1,0 +1,220 @@
+### Documentação rápida sobre HTML e CSS.
+
+## Exemplos estão na Base/Projetos/Html_Css/Minicurso_Compet/
+
+# Definição do tipo de documento para o navegador.
+	- <!doctype html>
+
+# Definição da tag geral do html. Abertura e fechamento da tag.
+	- <html> </html>
+
+# Seções básicas do html.
+	- Cabeça. Não aparece na página mas é importante para o navegador.
+		- <head> </head>
+	- Corpo. Aparece na página.
+		- <body> </body>
+
+# Título da página html que será exibido no navegador. Devemos colocar este dentro da tag head.
+	- <title> </title>
+
+# Definição do conjunto de caracteres. Unicode 8.
+	- <meta charset="utf-8"/>
+
+# No tópico acima o conjunto charset="" é um atributo da tag meta. Há várias tags que utilizam isso.
+
+# Tags de título.
+	- <h1> </h1> ~> Pode ir de 1 a 6 sendo que o menor exibe o maior texto.
+
+# Tag de parágrafo.
+	- <p>Insira o texto do parágrafo aqui.</p>
+
+! Elementos devem sempre ser colocados dentro de uma tag.
+
+# Quebra de linha nos parágrafos.
+	- <br />
+
+# Grifar uma palavra ou dar ênfase a uma palavra.
+	- <em>Texto que deseja dar ênfase</em>
+
+# Negrito em uma palavra.
+	- <strong>Texto que deseja que seja exibido em negrito.</strong>
+
+# Definição de uma lista não ordenada.
+	- <ul> </ul>
+
+# Definição de uma lista ordenada.
+	- <ol> </ol>
+
+# Criação de um item dentro da lista.
+	- <li> </li>
+
+# Definição de uma lista de definição.
+	- <dl> </dl>
+
+# Item principal de uma lista de definição.
+	- <dt> </dt>
+
+# Item secundário de uma lista de definição.
+	- <dd> </dd>
+
+# Comentário html.
+	- <!-- -->
+
+# Tags self close.
+	- Tags que na própria definição já há o fechamento da tag.
+	- Ex: meta.
+
+# Alguns tópicos sobre otimização para motores de busca.
+	- A tag h1 deve ser utilizada apenas uma vez na página e deve conter apenas a informação mais importante para o motor.
+	- É uma boa prática de desenvolvimento inserirmos na tag title o nome do site - descrição do site. Toda descrição deve ser resumida. Ex: homepage.
+	- Caso estejamos em um post da página uma boa prática é a inserção do título do artigo ou post - nome do site.
+	- A tag meta deve ser utilizada também para a descrição e conteudo da para o motor de busca.
+		- <meta name="description" content="Descrição completa do conteúdo limitada a 156 carcteres" />
+	- Outro fator da tag meta é a sua utilização para definição de palavras chave.
+		- <meta name="keywords" content="html, teste, definição" />
+	- Podemos também marcar o autor da página na busca.
+		- <meta name="author" content="name" />
+
+# A tag header é a tag topo que será repitida em todas as páginas.
+
+# A tag nav funciona como os índices de navegação das páginas.
+
+# A tag section divide a página em seções. Ex: artigos de uma página.
+
+# A tag article é uma tag que exibe o conteúdo da página. Não depende de uma página a parte.
+
+# A tag aside é uma tag que exibe algum conteúdo que está contido do lado da página.
+
+# A tag footer é o rodapé da página.
+
+# Dentro da tag article ou section podemos usar outras tags header e footer para separação dentro do artigo ou da seção.
+
+# Citações são feitas com a tag.
+	- <blockquote> </blockquote>
+
+# Links podem ser usados para facilitar ou realizar a navegação.
+	<a href="">Texto do link</a> 
+
+# Podemos da mesma forma direcionar o usuário a um certo local da página.
+	<a name="">Textto do link</a>
+
+# Direcionar o link para uma nova guia.
+	<a href="" target="_blank">Texto do link</a>
+
+# Uma boa prática é trabalhar como diretórios diferentes.
+
+# Para inserirmos imagens devemos usar a tag img. Em src devemos colocar o caminho da imagem.
+	- <img src="" />
+
+# Para exibir uma descrição na imagem enquanto essa não foi carregada podemos utilizar a tag alt.
+	- <img src="" alt="" />
+
+# Podemos adicionar imagens externas adicionando em src o url completo da imagem.
+
+# Podemos utilizar o atributo title na tag a para dar uma descrição a um link.
+
+# Podemos fazer uma estilização em linha utilizando o atributo style dentro da tag que queremos estilizar.
+	- color: red;
+
+# Podemos também retirar o underline de links utilizando no atributo style a configuração text-decoration.
+	- text-decoration: none;
+
+# Para uma estilização um pouco mais genérica devemos na tag head fazer o uso de uma tag de estilização com os atributos que desejamos usar.
+	- <style type="text/css">
+			a{
+				color: red; text-decoration: none;
+			} 
+	  </style>
+
+# A melhor forma de realizarmos uam estilização é a separação das configurações de estilização em um arquivo separado. Logo após a separação desse arquivo devemos linkar este arquivo com a página html.
+
+# Para realizar a linkagem devemos utlizar a tag link com os seguintes atributos.
+	- <link rel="stylesheet" type="text/css" href="estilo.css" />
+
+# Em uma folha de estilo sempre haverá a leitura de cima para baixo. Dessa forma se houver alguma propriedade que realiza sobrescrita a última alteração será aplicada.
+
+# Comentários em css: /* comentário */
+
+# Para aplicar alterações em um único elemento podemos atribuir um id ou classe específica ao elemento.
+	- id="segundo" -> #segundo{ /* estilos */ }
+	- class="link" -> .link{ /* estilos */ }
+
+# A regra para utilização dos elementos acima é que id's são únicos por página e classes podem ser utilizads mais de uma vez.
+
+# Podemos utilizar restrições de classes inserindo o elemento que queremos juntamente com a classe que queremos que utilizar.
+	- a.link { /* estilos */ }
+	- Nessa definição acima apénas os links que utilizarem a clase link serão estilizados.
+
+# Podemos utilizar divs para dividir o site e estilizar apenas uma parte.
+
+# O padding funciona no sentido horário.
+
+# Para aplicar alguma configuração de estilização devemos colocar de maneira hierarquica no arquivo css.
+	- Ex: header nav ul li
+
+# Reutilização de código css. Podemos reutilizar código definindo diretivas gerais.
+	- Ex: a:link, a:visited{ propriedades gerais }
+
+# Tag de criação de formulário.
+	- <form> </form>
+
+# O atributo action na tag form tem o papel de informar a página que irá tratar as informações enviadas no formulário.
+
+# O atributo method na tag form tem o papel de enviar o dados da página. Ele é o modo de envio.
+
+# A tag input é resposável pela criação de um campo de entrada. Essa tag é self-close.
+
+# Para colocar um campo com texto podemos usar a tag label. Inserindo o atributo for podemos direcionar o cursor para um id que desejarmos.
+
+# Se deixarmos o atributo action da tag form em branco o formulário será enviado para a página que enviou.
+
+# Podemos criar um botão fazendo a inserção de um input com a tag type sendo do tipo submit.
+
+# Botões de radio podem ser criados com a tag input e no atributo type inserirmos o valor radio.
+
+# Botões de checkbox podem ser criados com a tag input preenchendo o atributo type com o valor checkbox.
+
+# Os botões de radiobox só funcionam como radio quando inserimos a mesmo name neles.
+
+# Se precisarmos alterar apenas um tipo de input podemos fazer isso com a diretiva css.
+	- input[type=submit]{ Opções Css }
+
+# Podemos inserir um campo de texto com a tag textarea.
+
+# Comentários para Css.
+	- /* */
+
+# Para alterar a cor de um texto colocamos no arquivo Css o atributo color juntamente com a cor que desejamos.
+	- color: #ff6600;
+
+# Para alterar o espaçamento entre as letras utilizamos o atributo letter-spacing juntamente com o tamanho do espaçamento.
+	- letter-spacing: 2px;
+
+# Para alterar o tamanho das letras utilizamos o atributo text-transform seguido de uma destas opções.
+	- uppercase; ~> Letras Maiusculas.
+	- lowercase; ~> Letras Minúsculas.
+	- capitalize; ~> Primeira letra de cada palavra em caixa alta.
+
+# A propriedade text-indent nos dá a possibilidade de adiantar o paragrafo n pixels.
+
+# A propriedade width define o tamanho do texto em pixels.
+
+# A propriedade text-align define o modo como o texto será alinhado.
+
+# O atributo text-shadow tem como função adicionar uma sombra inserindo o tamanho em x, y e depois a cor.
+	- text-shadow: 1px 1px black;
+
+# Para utilizar algumas fontes podemos simplemente utilizar o link de fontes do google na base de dados da própria google.	
+	- Google Fonts: https://fonts.google.com/
+
+# Css reset é um conjunto de códigos css que vem com o intuito de remover toda a formatação padrão dos navegadores.
+
+# Endereço aonde obter uma reset css.
+	- https://meyerweb.com/eric/tools/css/reset/
+
+# Uma maneira melhor de padronizar está formatação css é a utilização do css normalize.
+
+# Endereço de obtenção do css normalize.
+	- https://necolas.github.io/normalize.css/
+
+# Parei no minuto 11:04 da aula 14

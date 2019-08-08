@@ -1,0 +1,10 @@
+### Remover Kernels antigos do Void Linux
+
+# Conhecer o Kernel que está sendo usado.
+	- uname -r
+
+# Listar os kernels que estão contidos na máquina.
+	- vkpurge list
+
+# Apagar um Kernel presente na máquina.
+	- sudo vkpurge rm <kernel>

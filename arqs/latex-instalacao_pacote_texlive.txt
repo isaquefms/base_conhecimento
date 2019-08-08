@@ -1,0 +1,4 @@
+### Instalação de pacotes latex com TexLive
+
+# Instalar um pacote qualquer.
+	- sudo tlmgr install <package_name>

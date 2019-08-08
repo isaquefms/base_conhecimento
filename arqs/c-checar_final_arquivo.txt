@@ -1,0 +1,4 @@
+### Como verificar o final de um arquivo em c.
+
+# Para verificar o final basta usarmos a função feof que retorna um inteiro diferente de zero caso o cheguemos no final do arquivo.
+	- int feof (FILE *fp);
