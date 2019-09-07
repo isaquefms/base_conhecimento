@@ -1,0 +1,193 @@
+## Docs Java
+
+# Comentário em uma única linha
+// comentarios
+
+# Comentário de multiplas linhas
+/* 
+* comentário 
+*/
+
+# Identificadires de variáveis (Camel Case)
+minhaVariavel = 3
+
+# Identificadores de classes e interfaces
+MnhasClasseOp();
+
+# Identificadores de variaveis constantes
+CONSTANTE
+
+# Palavras reservadas
+abstract   continue  for  new  switch boolean  default  goto  null  synchronized 
+break  do  if  package  this byte  double  implements  private  threadsafe 
+byvalue  else  import  protected  throw case  extends  instanceof  public  transient 
+catch  false  int  return  true char  final  interface  short  try 
+class  finally  long  static  void const  float  native  super  while
+
+# Tipos primitivos de dados
+Boolean: true, false
+Char: caractere
+Inteiros:
+	*Byte: 1 byte
+	*Short: 2 bytes
+	*Int: 4 bytes
+	*Long: 8 bytes
+Reais ou Ponto Flutuante:
+	*Float: 4 bytes
+	*Double: 8 bytes
+
+# Declaração de variavel
+int a; // Inicia com o valor padrão 0
+int a = 8; // inicia com o valor 8
+
+# Operadores Aritiméticos
+Soma: +
+Subtração: -
+Multiplicação: *
+Divisão: /
+Resto da Divisão: %
+
+# Operadores de Atribuição
+"+=": num += num1 ~> num = num + num1
+"-=": num -= num1 ~> num = num - num1
+"*=": num *= num1 ~> num = num * num1
+"/=": num /= num1 ~> num = num / num1
+"%=": num %/ num1 ~> num = num % num1
+
+# Operadores Unários
+Positivo: +
+Negativo: -
+
+# Operador de descoberta de classe
+nomeObjeto instanceof NomeClasse
+
+# Operadores de incremento e decremento
+Incremento: ++
+Decremento: --
+
+# Operadores de comparação
+Maior que: >
+Menor que: <
+Igual: ==
+Diferente: !=
+Maior ou Igual: >=
+Menor ou Igual: <=
+
+# Operadores logicos
+&&: (E) ~> Devolve true se ambas comparações voltarem true
+||: (Ou) ~> Devolve true se alguma das comparações voltarem true 
+!: (Negação) ~> Nega o operando que se passa
+&: ~> Devolve true se ambos os operadores forem true, analisando ambos
+|: ~> Devolve true se algum dos operadores forem true, analisando ambos
+
+# Operador de concatenação de cadeias de caracteres
++: Concatenação de strings
+
+# Operadores que atuam a nivel de bits
+>>: Deslocamento à direita dos bits do operando
+<<: Deslocamento à esquerda dos bits do operando
+&: Operador and a nivel de bit
+|: Operador or a nivel de bit
+
+# Controles de bifurcação
+if: Estrutura de controle que utiliza comparação boleana 
+~> if (expressão boleana) {
+	conjunto de sentenças 
+}
+else: Estrutura de contole alternativa
+~> if (expressão boleana) {
+	conjunto de sentenças
+} else { conjunto de sentenças 1}
+
+elseif: Estrutura de controle boleana alternativa
+if (expressão boleana) {
+	conjunto de sentenças 
+} elseif (expressão boleana 1) {
+	conjunto de sentenças 1
+}
+
+# Controle de execução que depende do estado de uma variável (Switch)
+Switch (expressão){
+	Case valor1: Conjunto de sentenças;
+	break;
+	Case valor2: Conjunto de sentenças;
+	break;
+	Case valor3: Conjunto de sentenças;
+	break;
+}
+
+# Estruturas de repetição
+while(Enquanto) ~> Repetição indefinida
+while (Expressão boleana) {
+	Conjunto de sentenças
+}
+
+for(Para) ~> Repetição definida
+for (iniciação; expressão boleana; incremento;) {
+	Conjunto de sentenças
+}
+
+do while ~> Repetição que executa o loop, pelo menos, uma vez
+i=5; 
+do{ 
+   i --; 
+   if (i == 3) break; 
+} while ( i > 0 )
+
+# Sentenças Break, Continue e Return
+Break: Permite sair do bloco de sentenças , fechado entre chaves, ou do loop que estamos executando, sem executar as sentenças que restam ou o final da repetição do loop.
+
+Continue: Só é válida para loops, serve para não executar as sentenças que restam para a finalização de uma repetição desse loop, continuando depois com as seguintes repetições do loop.
+
+Return: Esta sentença nos permite finalizar também um conjunto de sentenças, com a peculiaridade esta vez de que também finaliza o método ou função no qual se encontre. No caso de que queiramos devolver um valor desde essa função ou método, devemos coloca-lo a seguir de return.
+
+# Corpo de uma classe
+public class Classe{
+	(corpo da classe)
+}
+
+# Permissão de acesso de uma classe
+public: Uma classe "public" é acessível desde qualquer outra classe, não obstante para que isto aconteça deve ser primeiro acessível o "package" dessa classe "public". Para que um "package" seja acessível deve de estar no diretório que assinala a variável "CLASSPATH" que definimos ao instalar nosso ambiente Java e claro, ter permissão de leitura nesse diretório.
+
+package: Usar este identificador no cabeçalho da classe é opcional, pois é a opção por padrão em java, ou seja, se escrevermos class Teste = package class Teste. As classes packages são acessiveis somente pelo próprio pacote.
+
+# Nomeclatura de um pacote.
+Por convenção, todos os pacotes java devem começar com letras minúsculas
+
+# Inserção de um pacote.
+Package nomePacote;
+
+# Importação de uma classe de um pacote
+import classePacote
+
+# Acessibilidade de váriaveis e metodos
+public: Dá acessibilidade completa à variável, pode-se ver desde a própria classe, dentro e fora do mesmo "package" e em qualquer "subclasse" da classe na que se declara, estando no mesmo ou em diferente "package". 
+
+protected: Pode-se acessar desde a própria classe, desde o mesmo "package" e desde qualquer "subclasse", porém não se pode ver desde uma classe de outro "package".
+
+private: Só se pode acessar desde a própria classe. 
+
+package: É a opção por padrão (como se não fosse colocado nada). Proporciona acessibilidade desde o próprio "package" e portanto, logicamente desde a própria classe e ademais desde qualquer subclasse que esteja dentro do mesmo "package". 
+
+# Metodo para criar uma nova instancia de um objeto
+new ~> Classe objeto = new metodo();
+
+# Observação sobre classe
+1º: Os programas "sobre o papel" são as classes. 
+2º: As classes "sobre papel" se relacionam com outras classes. Por exemplo, nossa classe Ficha utiliza para definir seu parâmetro "cor" à classe "String" própria de Java.
+3º: Na "vida real", ou seja, em funcionamento, as classes mostram-se como "objetos". 
+4º: São os objetos os que colaboram e se relacionam com outros objetos, e o fazem mediante o "passo de mensagens".
+
+# Executar um metodo de uma classe
+nomeClasse.nomeMetodo(parametrosMetodo);
+
+# Acesso às variaveis internar de um objeto
+nomeClasse.nomeVariavelInterna;
+
+# Estrutura basica de um programa Java
+public class MyName {
+	public static void main(String[] args) {
+		System.out.println("Isaque");
+	}
+}
+

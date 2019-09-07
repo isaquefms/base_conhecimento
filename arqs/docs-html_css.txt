@@ -1,0 +1,308 @@
+## Docs Html e Css
+
+# Texto em Negrito
+<strong></strong>
+
+# Marcação de inicio e fim da página html
+<html></html>
+
+# Cabeçalho básico
+<!DOCTYPE html>
+<html>
+<head>
+<title>Minha Pagina</title>
+</head>
+</html>
+
+# Tag de corpo da página
+<body></body>
+
+# Tag de paragrafo
+<p></p>
+
+# Tags de cabeçalhos
+<h1></h1> Enorme
+<h2></h2> Grande
+<h3></h3> Medio
+<h4></h4> Pequeno
+<h5></h5> Muito pequeno
+<h6></h6> Extremamente pequeno
+
+# Tag para redirecionamento de links
+<a href="endereço do site">Descrição do Link</a>
+
+# Tag de imagem
+<img src="endereço da imagem"/>
+
+# Imagem redirecionando para um determinado link
+<a href="endereço do site">
+	<img src="endereço da imagem"/>
+</a>
+
+# Tag de aberturas de listas ordenadas e itens
+<ol>
+	<li>Item 1</li>
+	<li>Item 2</li>
+	<li>Item 3</li>
+</ol>
+
+# Tag de listas não ordenadas
+<ul>
+	<li>Item 1</li>
+	<li>Item 2</li>
+	<li>Item 3</li>
+</ul>
+
+# Podemos inserir listas dentro de listas
+<ul>
+	<li>Item 1</li>
+		<ol>
+			<li>Sub Item 1</li>
+			<li>Sub Item 2</li>
+		</ol>
+	<li>Item 2<li>
+		<ul>
+			<li>Sub Item 1</li>
+			<li>Sub Item 2</li>
+		</ul>
+</ul>	
+
+# Comentários
+<!-- Texto -->
+
+# Estilizando uma deteminada tag apartir do atributo style
+<p style="font-size: 40px"> Texto </p>
+
+# Alterando cor da tag pelo atributo style
+<h1 style="color: green; font-size: 40px">Texto</h1>
+
+# Alterando a fonte de uma tag pelo atributo style
+<li style="font-size: 20px; font-family: Impact">Texto</li>
+
+# Alterar a cor de fundo de uma tag pelo atributo style
+<ol style="background-color: yellow">
+	<li>Teste</li>
+	<li>Teste</li>
+</ol>
+
+# Alinhar o tento de uma tag pelo atributo style
+<p style="font-align: center">Texto</p>
+
+# Editar texto em itálico
+<em>texto<em>
+
+# Tag para montagem de tabelas
+<table>
+	<tr>
+		<td>Item 1</td>
+		<td>Item 2</td>
+	</tr>
+
+	<tr>
+		<td>Item 3</td>
+		<td>Item 4</td>
+	</tr>
+</table>
+
+* <tr> -> table row - linha
+* <td> -> table data - dados
+
+# Tag de cabeçalho da tabela
+<thead></thead>
+
+# Tag de corpo da tabela
+<tbody></tbody>
+
+# Cabeçalho de uma tabela
+<thead>
+	<tr>
+		<th></th>
+	</tr>
+<thead>
+
+# Atributo que mescla celulas de uma tabela
+<th colspan="2"></th>
+
+* O numero inserido representa o número de celulas mescladas
+
+# Divisão em partes(containers)
+<div></div>
+
+# Tag para estilização individual
+<span></span>
+
+
+## Docs Css
+
+# Lincando um arquivo css em um arquivo html (Deve ficar entre as tags de head)
+<link type="text/css" rel="stylesheet" href="stylesheet.css" />
+
+# Sintaxe Básica do Css
+elemento_html {
+	propriedade: valor;
+}
+
+# Alterando um estilo de fonte
+font-family: cursive;
+
+# Alterando a cor
+color: cor;
+
+# Alterando o tamanho da fonte
+font-size: tamanho_px; 
+
+# Alterando a cor de fundo de um seletor
+background-color: color;
+
+# Comentario em Css
+/* Texto */
+
+# Alterando a cor por valores hexadecimais
+color: #valor_hexidecimal
+
+# Meio alternativo para o tamanho da fonte
+font-size: 1em;
+font-size: 0.5em;
+
+# Fontes padrões do Css
+serif
+sans-serif
+cursive
+
+# Garantia da alteração da fonte
+font-family: Verdana, sans-serif, Tahoma;
+
+# Alterar a altura de um elemento html
+height: valor_px;
+
+# Alterar a largura de um elemento html
+width: valor_px;
+
+# Propriedade de borda em alguns elementos
+border: valores;
+
+# Borda tracejada
+border dashed;
+
+# Retirar a decoração especial de links
+text-decoration: none;
+
+# Mudar a cor da borda de um elemento
+border-color: valor ou #hexadecimal
+
+# Mudar a largura da borda
+border-width: valor_px;
+
+# Aredondando os cantos das bordas
+border-radius: valor_px;
+
+# Centralizando um objeto apartir de margens iguais
+margin: auto;
+
+# Alinhando o texto no centro
+text-align: center;
+
+# Selecionando um único elemento que está dentro de várias divs
+div div div elemento {
+	propriedades: valores;
+}
+
+# Seletor de todos os elementos da página
+* {
+	propriedade: valor;
+}
+
+# Seletor de elementos dentro de outros elementos pai
+li a {
+	propriedade: valor;
+}
+
+# Seletor de elementos unicos dentro de outro elemento
+div > p {
+	propriedade: valor;
+}
+
+# Definir clases em elementos html e proporcionar estilo css a estes
+html -> <div class="teste"></div>
+css -> .teste {
+	
+}
+
+# Definir id's em elementos html e proporcionar estilo css a estes
+html -> <p id="teste"></p>
+css -> #teste {
+	
+}
+
+# Estilização de Pseudo Seletores com css
+elemento_html:pseudo_seletor {
+	
+}
+pseudo seletores podem ser elementos de:
+a:link = Um link não visitado
+a:visited = Um link visitado
+a:hover = Um link sobre o qual está o cursor do mouse
+
+# Estilização Do primeiro filho de um elemento atraves de pseudo seletores
+p:first-child {
+	propriedade: valor;
+}
+
+# Estilização de qualquer elemento filho atraves de pseudo seletores
+p:nth-child(2) {
+	propriedade: valor;
+}
+* Entre parenteses o valor representa o filho desejado.
+
+# Formando um circulo atraves do border radius
+div {
+	border-radius: 100%;
+}
+
+# Elementos html podem receber classes e id's
+<div class="family" id="teste">
+
+# Propriedade display. Ajusta o Alinhamento no bloco do elemento. 
+Block: Elemento em bloco, não permite que outro elemento ocupe a mesma linha. 
+Inline-Block: Elemento em bloco, porém permite que outros elementos sejam colocados na mesma linha. 
+Inline: Faz com que o elemento fique com outro elemento na linha, porém sem formata-lo como bloco.
+None: Faz com que o conteudo desapareça.
+
+# Elementos importantes das camadas de um elemento html
+Margin ou Margem é o espaço em volta do elemento.
+Border ou Borda é a beirada do elemento.
+Padding ou espaçamento é o espaço entre o conteudo e a borda.
+Content ou conteudo é o conteudo do elemento.
+
+# Alinhando o elemento no centro da pagina
+margin: auto; *Adiciona automaticamente margens iguais nos dois lados do elemento
+
+# Definição de margem direta
+margin: 1px 2px 1px 2px; * Inicia no top e segue em sentido horário
+
+# Espaçamento e margem podem ser definidos de forma separada e direta, como mostrada acima
+padding-top: valor;
+padding-rigth: valor;
+padding-bottom: valor;
+padding-left: valor;
+
+# Espaçamento igual em todos os lados do elemento
+padding: 10px; *Definição de um unico valor geral
+
+# Colocar um elemento como flutuante
+float: lugar; * Até onde sei aceita descrições como right, left
+
+# Fazer com que um elemento se coloque abaixo de outros
+clear: left, right, both (direita, esquerda ou os dois);
+
+# Posicionamento Absoluto
+position: absolute; * O posicionamento tomará como base o elemento Pai, caso este seja absoluto (não sendo definido por static). Se o elemento Pai não for absoluto ele tomara como base o documento html.
+
+# Posicionamento Direto
+position: relative; * O elemento se move como se o elemento Pai estivesse declarado com position: static; Se move em função do documento html
+
+# Posicionamento Fixo
+position: fixed; * O elemento se fixa a página de tal modo que ao subir e descer a pagina o elemento continua no mesmo lugar.
+
+# Propriedade que garante que meu cabeçalho sejá o ponto mais alto da pagina. (Neste caso não opdemos atribuir valores a outros elementos)
+z-index: 1;

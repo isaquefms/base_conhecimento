@@ -1,0 +1,114 @@
+## Docs Java Script
+
+# Escrever em um arquivo java script
+"Isaque"
+
+# Buscar o tamanho de uma string
+"Isaque".length()
+
+# Matemática Basica
+10 + 10
+10 - 5 
+
+# Multiplicação e Divisão
+10 / 2
+10 / 5
+
+# Comentarios em Js
+// Isto é um Comentário
+
+# Mensagem para confirmação
+confirm("Oi Mundo !!");
+
+# Exibir uma mensagem no Console e Augardar a resposta
+prompt("Qual é o nome ?");
+
+# Tipos de Dados
+Strings = "Isaque", "Teste"
+Numeros = 1020 10.20
+
+# Operadores Boleanos
+True e False
+
+# Escrever Log no console do Navegador
+console.log("Texto")
+
+# Operadores de Compração
+* > Maior que
+* < Menor Que
+* <= Menor ou igual a
+* >= Maior ou igual a
+* === Igual a
+* !== Diferente de
+
+# Estrutura de comparação e decisão if (se)
+if (condição) {
+	ação;
+}
+
+# Estrutura de comparação e decisão if e retorno caso a condição seja falsa.
+if (condição) {
+	ação caso seja true;
+}
+else {
+	ação caso seja false;
+}
+
+# Retorno do resto da divisão
+10 % 3 -> retorna 1
+
+# Obter uma substring(O pedaço de uma string)
+"uma palavra".substring(x, y)
+x representa o ponto inicial do corte e y o final -> valores numericos
+ex : "Isaque".substring(2, 5); -> aqu
+
+# Declaração de variavel
+var varName = valor;
+ex: var name = "Isaque";
+	var num = 40;
+	var true = True;
+
+# Declaração de funções
+var sayHello = function(name) {
+	console.log('Alô' + name);
+};
+
+# Executando função
+nomeFuncao(paramentro);
+
+# Usando o return para retornar o valor apos o processamento da função
+var timesTwo = function(number) {
+	return number * 2;
+}
+
+# Funções podem receber mais de 1 parametro
+var teste = function (num, letra){
+	comando;
+};
+
+# Variaveis globais são acessadas em qualquer local do código. Variaveis locais são acessadas apenas dentro das funções.
+
+# Gerar um número aleatório
+Math.random();
+
+# Laço for
+for (var i = 0; i <= valorDesejado; i++) {
+  console.log(i);
+  }
+  
+# Incremento e decremento
++ 1 = i++;
+- 1 = i--;
+Incrementar qualquer valor = i += x
+Decrementar qualquer valor = i -= x
+
+# Declaração de arrays
+var arrayName = [dados, dados, dados]
+
+# Exibir um certo dado de um array
+arrayName[indice]; O indice inicia a contagem a partir do número 0
+
+# Dizer ao console para ignorar a quebra da linha com barra invertida.
+/*jshint multistr:true */
+
+# 

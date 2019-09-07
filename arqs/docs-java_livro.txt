@@ -1,0 +1,373 @@
+## Docs Java Com Guia do Programador
+
+# Todo programa java necessita de uma classe e um método principal normalmente declarado com public, void e main.
+
+# Java é sensível a letras maiusculas. Portanto java é diferente de Java, assim como nome é diferente de NOME.
+
+# Comentários podem conter acentuação
+    * // -> Comentário de linha
+    * /*  */ -> Comentário de bloco (Multiplas linhas)
+    * /**  */ -> Comentário de documentação (Multiplas linhas)
+    
+# Ferramentas básicas do jdk (Utilizadas pela linha de comando)
+    * Compilador Java -> javac [-opções] <fonte.java>
+    * Máquina virtual Java (jvm) -> java [-opções] <classe>
+    * Gerador de documentação -> javadoc [-opções] [pacotes] [arqs_fonte] [@arqs]
+    * Processador de anotações -> apt[-opções] <fonte.java> [@arqs]
+    * Visualizador de applets -> appletviewer [-opções] <pagina.html>
+    * Criador de arquivos Jar -> jar [-opções] <jar> <args...>
+    * Depurador Java jdb [-opções] <classe> [args]
+    * Gerador header/stub Jni -> javah [-opçoes] <classe>
+    * Descompilador Java -> javap <-opções> <classes...>
+    
+# Args da classe principal(main), aparentemente recebe em um array os valores passados como argumento na linha de comando.
+
+# O laço for seguido de apenas uma linha pode ser usado sem chaves
+
+# Tipo de dados primitivos Java
+    * Inteiros: byte, short, int, long
+    * Real: float, double
+    * Caractere: char
+    * Lógico: boolean
+    
+# Em jaa o underline(_), pode ser usado na separação de milhares ou grupos de digitos de qualquer tamanho.
+    * 1_000_000_000.03
+    
+# Tabela de Representação de caracteres especiais.
+    * \n -> Pula linha
+    * \r -> Retorno de carro
+    * \b -> Retrocesso
+    * \t -> Tubulação
+    * \f -> Nova página
+    * \' -> Apóstrofe
+    * \" -> Aspas
+    * \\ -> Barra invertida
+    * \u223d -> Caractere Unicode 223d
+    * \g37 -> Octal 37
+    * \fca -> Hexadecimal FCA
+    
+# Variaveis em java podem ser compostas por letras, números e pelos caracters underline(_) e cifrão($). Por sua vez não podem iniciar com um numeral, conter espaço, contar com operadores e nem utilizar de palavras reservadas.
+
+# Palavras reservadas pelo java : abstract, assert, boolean, break, byte, case, catch, char, class, continue, default, do, double, else, enum, extends, false, final, finally, float, for, if, implements, import, instanceof, int, interface, long, native, new, null, package, private, protected, public, return, short, static, strictfp, super, switch, synchronized, this, throw, throws, transient, true, try, void, volatile, while.
+
+# Declaração de variaveis
+<Tipo> <nome>;
+
+# Declaração de variaveis do mesmo tipo
+<Tipo> <nome>, <nome1> ;
+
+# Declaração de variavel com inicialização
+<Tipo> <nome> = <valor>;
+
+# Toda variavel somente funcionará dento do seu escopo que é iniciado por { e terminado por }. Portanto se ela for utilizada fora de seu escopo o compilador alertará sobre o erro.
+
+# Variaveis em java seguem um padrão onde podem conter letras, números e também símbolos (_, $). É recomendado que os nomes sejam iniciados com letras minúsculas. Caso seja seguido de outro nome, este deve ser iniciado com letra maiuscula (Camel case). Caso seja composta de apenas uma letra é sugerido que está seja a inicial de seu tipo. Ex: int i, double d.
+
+# Entrada não formatada.
+char c = System.in.read();
+
+# Saída não formatada.
+System.out.println("Olá !!");
+
+# Entrada de dados.
+import java.util.Scanner; -> Importação da classe scanner.
+Scanner s = new Scanner(system.in); -> Prepara a entrada de dados.
+int valor = s.nextInt(); -> Leitura da entrada de dados e armazenamento em uma variável apropriada.
+
+# Saída formatada.
+System.out.printf(<formatação> [, expr1 [, expr2 [ ...]]]);
+
+# Marcadores para formatação
+    * %d -> inteiros de qualquer tipo.
+    * %f -> reais de qualquer tipo.
+    * %c -> caracteres de qualquer tipo.
+    * %s -> strings de qualquer tipo.
+    * %n -> quebra de linha.
+    
+# Operador de atribuição (=).
+É um operador que analisa a sequência, expressão matemática a direita e ao final atribui o resultado a variável.
+
+# Operadores aritméticos
++ -> adição
+- -> subtração
+* -> Multiplicação
+/ -> divisão
+% -> Resto da divisão
+- -> Sinal negativo
++ -> Sinal positivo
+++ -> incremento unitário
+-- -> decremento unitário
+
+# Os operadores de incremento e decremento podem ser usados antes e depois de seus operandos, porém nos dois casos o resultado obtido é diferente. Quando inserimo o operador antes do operando o incremento primeiramente ocorrerá e logo em seguida as demais oprações serão feitas. Caso seja colocado após o operando o valor do operando será aplicado antes da realização do incremento.
+// pre-incremento
+int x = 0, y;
+y = ++x;
+y = 1;
+// pos-incremento
+int x = 0, y;
+y = x++;
+y = 0;
+
+# Em operações que envolve tipos de primitivos diferentes, os tipos mais simples são transformados em tipos mais complexos.
+
+# Caso seja necessário transformar tipos mais complexos em tipos menos complexos é necessária explicitar a transformação. Ex:
+double d = 3.47;
+int x = (int) d;
+float f = (float) (2 * d);
+
+# Operadores Relacionais realizam comparações entre valores literais, variáveis ou resultado de epressões retornando um resultado logico.
+== -> igual
+!= -> diferente
+> -> maior que
+< -> menor que
+>= -> maior igual a
+<= -> menor igual a
+
+# Operadores lógicos conectam logicamente o resultado de diferentes expressões aritméticas ou relacionais.
+&& -> E lógico (and)
+|| -> Ou lógico (or)
+! -> Negação (not)
+^ -> Ou exclusivo (xor)
+
+# Operadores de atribuição composta. Ex: a op= expres
++= -> Adição e atribuição
+-= -> Subtração e atribuição
+*= -> Multiplicação e atribuição
+/= -> Divisão e atribuição
+%= -> Divisão inteira e atribuição
+&= -> E bitwise e atribuição
+|= -> Ou bitwise e atribuição
+^= -> Ou exclusivo bitwise e atribuição
+>>= Rotação à direita e atribuição
+<<= Rotação à esquerda e atribuição
+>>>= Rotação à direita sem sinal e atribuição
+
+# Operador ternário é um avaliador de condições que permite utilizar o valor de duas expressões diferentes conforme o resultado da condição avaliada.
+<condição> ? <expressão_true> : <expressão_false>
+Ex: (a > 50 ? é : não é)
+
+# Operadores bitwise realizam comparações de variáveis do tipo byte
+& -> E bit a bit (bitwise and)
+| -> Ou bit a bit (bitwise or)
+^ -> Ou exclusivo bit a bit (bitwise xor)
+~ -> Complemento de 2
+<< -> Rotação à esquerda de n bits
+>> -> Rotação à direita de n bits
+>>> -> Rotação à direita sem sinal
+
+# Procedência de avaliação de operadores
+1 -> [] () .(seletor)
+2 -> ++ ~ instanceof new -(unário) (cast)
+3 -> * / %
+4 -> + -
+5 -> << >> >>>
+6 -> < > >= <=
+7 -> == !=
+8 -> &
+9 -> ~
+10 -> |
+11 -> &&
+12 -> ||
+13 -> ?:
+14 -> = op = 
+15 -> ,
+16 -> -> (operador lambda)
+
+# As instruções de um programa são chamadas de diretivas, as quais são tradicionalmente escritas uma após a outra e separadas, por exemplo, com uma quebra de linha ou um caractere de pontuação. Em Java (;).
+Ex: diretiva1; diretiva2;
+diretiva3;
+
+# As diretivas podem ser tratadas indivudualmente ou como um conjunto denominado bloco. Em Java o bloco é um grupo de diretivas delimitadas por chaves ({e}) e que recebe um tratamento equivalente ao de uma única diretiva.
+Ex: { // bloco que equivale a uma única diretiva
+diretiva1;
+diretiva2;
+}
+
+# Estruturas de repetição simples efetuam a repetição de diretivas ou blocos, criando os chamados laços. O número de repetiçõed pode ser predefinido ou determinado pelo programa durante a execução. Correspondente à diretiva for no Java.
+
+# Estruturas de repetição condicionais são semelhantes às estruturas de repetição simples, mas cuja repetição está associada à avaliação de uma condição. Geralmente são usadas quando não se conhece de antemão o número necessário de repetições. No Java são representadas pelas diretivas while e do while.
+
+# Estruturas de desvio de fluxo são destinadas ao desvio da execução do programa para uma outra parte, quebrando o fluxo sequencial. O desvio condicional é aquele associado à avaliação de uma expressão, como uma tomada de decisão; e o desvio incodicional ocorre automaticamente. No Java, existem as diretivas if else e switch para o desvio condicional simples e múltiplo respectivamente, além de break e continue para o desvio incodicional.
+
+# Estrutura de repetição simples for
+for ([iniciação]; [condição]; [incremento/decremento])
+    diretiva;
+    
+# Estrutura da diretiva for avançada
+for ( [TipoElemento] <variável> : <expressão> ) {
+    diretiva;
+}
+
+# Estrutura de repetição condicional while
+while ( <condição> )
+    diretiva;
+    
+# Estrutura de repetição condicional do while
+do {
+    diretiva;
+} while ( <ondição> );
+
+# Estrutura de desvio de fluxo if else
+if ( <condição> )
+    diretiva1;
+[else
+    diretiva2;]
+    
+# Estrutura de desvio multiplo de fluxo switch
+switch ( <expressão_ordinal> ) {
+    case <ordinal1>:
+        diretiva1;
+        [break;]
+        
+    case <ordinal2>:
+        diretiva2;
+        [break;]
+        
+    [default:
+        diretiva_default;]
+}
+
+# O método toLowerCase() transforma os caracteres maiúsculos de uma string em minúsculas
+
+# A diretiva break provoca a interrupção de um comando de desvio multiplo de fluxo e também de laços automáticos ou condicionais.
+
+# A diretiva continue só tem aplicação em conjunto com as estruturas de repetição. Seu uso interrompe apenas a iteração corrente, desviando a execução para a avaliação da condição associada à diretiva, o que permite acelerar os laços.
+
+# Estruturas de controle de erros tem a função de separar o código que executa as tarefas desejadas das rotinas de tratamento de tratamento de eventuais erros, além de evitar que o programador tenha de fazer testes de verificação e avaliação antes da realização de certas operações.
+try [(recurso = inicialização)] {
+    diretiva_normal;
+} catch ( <exception1> ) {
+    diretiva_de_tratamento_de_erro1;
+} [ catch ( <exception2> ) {
+    diretiva_de_tratamento_de_erro2;
+} ] [ finally {
+    diretiva_de_execução_garantida;
+}]
+
+# Podemos unir varias exceções separando estas pelo caractere |.
+
+# Estrutura sintatica da cláusula finally.
+try {
+    diretiva_normal;
+} finally {
+    diretiva_de_execução_garantida;
+}
+
+# Asserções permitem comunicar as considerações sobre o estado de um programa em qualquer ponto de sua execução, interrompendo-o quando se tornam falsas.
+assert <condição> [: expressão];
+
+# Principais opções da maquina virtual Java
+-d32 -> Usa modelo de dados de 32 bits se disponível.
+-d64 -> Usa modelo de dados de 64 bits se disponível.
+-client -> Para selecionar uma VM tipo cliente (default).
+-server -> Para selecionar uma VM tipo servidor.
+-cp diretórios -> Indica os diretórios que contêm classe de usuários.
+-D<nome>=<valor> -> Ajusta uma propriedade do sistema.
+-verbose[:class|gc|jni] -> Produz saída detalhada para tudo ou para: classes, garbage collector ou JNI.
+-version -> Exibe informação de versão e encerra a JVM.
+-version:<número> -> Requisita execução da versão indicada da VM.
+-X -> Exibe as versões não padronizadas.
+-esa -> Habilita as asserções do sistema.
+-dsa -> Desabilita as asserções do sistema.
+-enableassertions[:<package> ... | <classname> ...] -> Habilita as asserções da aplicação com granularidade indicada.
+-disablassertions[:<package> ... | <classname> ...] -> Desabilita as asserções da apicação com granularidade indicada.
+-showversion -> Exibe informação de versão e continua.
+
+# Arrajos e matrizes são conhecidos como arrays, essas estruturas de dados armazenam um número fixo de elementos de um mesmo tipo. Seus elementos são como variáveis simples do seu tipo que permitem armazenar (escrita) ou recuperar (leitura) valores.
+
+# Nos arranjos os elementos são organizados em uma única dimensão, enquanto nas matrizes eles podem ser distribuídos em várias dimensões. Cada elemento é acessível por meio de um índice relacionado à sua posição: o índice 0 (zero) permite acessar o primeiro elemento, o índice 1 (um) o segundo elemento, e assim por diante.
+
+# Declaração de arranjos.
+<Tipo> identificador [];
+
+# Alocação de arranjos.
+idenificador = new <Tipo> [tamanho];
+
+# Declaração e alocação de arranjo.
+<Tipo> identificador [] = new <Tipo> [tamanho];
+
+# A diretiva for avançada não é adequada quando é necessário atribuir valores aos elementos so arranjo ou quando os índices do arranjo devem ser utilizados.
+
+# Preenchimento do array com um valor constante utilizando o método fill.
+double arr[] = new double[5]; // Declaração e alocação do arranjo.
+Arrays.fill(arr, 12.34); // Preenchimento com constante 12.34.
+System.out.println(Arrays.toString(arr)); // Exibição do arranjo.
+
+# Comparação de arrays utilizando o método equals da classe Arrays. O resultado da comparação é true quando os itens dos arrays são exatamente iguais.
+double arr1[] = { 0.0, 0.2, 0.4, 1.5, 67.89}; // Alocação e inicialização automática.
+double arr2[] = { 0.0, 0.2, 0.4, 1.5}; // Alocação e inicialização automática.
+// Mensagem com resultado da comparação: false (arranjos são diferentes).
+System.out.println("Arr1 == Arr2 ? " + Arrays.equals(arr1, arr2));
+
+# Para efetuar cópias de um array devemos utilizar os métodos copyOf e copyOfRange. Para se copiar os n elementos de um arranjo, utilizamos copyOf. Já o método copyOfRange recebe 3 parâmetros, que são: nome do array, índice para início da cópia e índice para término.
+double arr3[] = { 0.0, 0.2, 0.4, 1.5, 2.7 }; // Alocação e inicialização automáticas de arr3.
+double arr4[] = Arrays.copyOf(arr3, arr3.length); // Cópia total de arr3.
+double arr5[] = Arrays.copyOf(arr4, arr4.length/2); // Cópia 1a metade de arr4.
+double arr6[] = Arrays.copyOfRange(arr4, arr4.length/2, arr4.length); // Cópia 2a metade de arr4.
+
+System.out.println(Arrays.toString(arr3));
+System.out.println(Arrays.toString(arr4));
+System.out.println(Arrays.toString(arr5));
+System.out.println(Arrays.toString(arr6));
+
+# A ordenação ascendente de um array pode ser feita a partir do método sort da classe Arrays. Exemplo de utilização da ordenação ascendente:
+Arrays.sort(arr); // Ordenação ascendente do arranjo arr
+
+# Utilidade dos arrays.
+double arr1[] = { 13.5, -1.4, 327, 0, 12, 3 }; // Alocação e iniciação automáticas.
+double arr2[] = Arrays.copyOf(arr1, arr1.length); // Cópia do array.
+Arrays.sort(arr2); // Ordenação da cópia.
+
+# O método sort pode também ser utilizado em apénas uma parte do array.
+Arrays.sort(arranjo, inicio, fim); // Ordenação da porção entre início e fim do arranjo.
+
+# O método sort da classe Arrays utiliza internamente o algoritmo QuickSort, o mais rápido conhecido, portanto o mais indicado para utilização.
+
+# As matrizes, podem ser distribuídas em várias dimensões distintas.
+<Tipo> identificador = new <Tipo> [dim_1][dim_2]...[dim_n];
+
+# As matrizes também podem ser iniciadas em sua declaração.
+// matriz 2x3
+int m[][] = {{1, 2, 3}, // 1a linha tem 3 elementos
+             {4, 5, 6}}; // 2a linha tem 3 elementos
+             
+// matriz 3x2
+int m[][] = {{ 1, 2}, // 1a linha tem 2 elementos
+             { 3, 4}, // 2a linha tem 2 elementos
+             { 5, 6}} // 3a linha tem 2 elementos
+             
+# Como no caso dos arranjos, as matrizes em Java são automaticamente preenchidas com valores nulos, ou seja, todos os seus elementos recebem um valor 0 (zero) quando de qualquer tipo numérico, false quando booleano e null quando de tipo objeto.
+
+# É importante ressaltar que uma matriz em Java é como um array de arrays, assim, dada uma matriz m de três dimensões:
+* m[i][j][k] permite acessar qualquer elemento simples da matriz;
+* m[i][j] permite acessar os respectivos sub-arrays de uma dimensão;
+* m[i] permite acessar as respectivas submatrizes de duas dimensões;
+
+# Todo programa em Java contém um método main(String[] args) que constitui seu inicio e que recebe obrigatoriamente um arranjo de tipo String[] para acomodar os argumentos da linha de comando. Valores que podem ser fornecidos  ao programa por meio do prompt oferecido pela janela de console. Esses argumentos são tranformados em um arrajo de objetos String entregue ao metodo main(String[]) no inicio da execução do programa.
+
+# Uma anotação, ou annotation, é uma metainformação incluída no código do programa, com o objetivo de fornecer indicações para feramentas que irão manipulá-lo, ou seja, que servem como diretivas paraa compiladores, IDEs ou mesmo outros programas. Em rigor, as anotações não fazem parte da liguagem Java e não afetam sua semântica, mas são construtores de extrema utilidade, pois permitem reduzir o código escrito pelos programadores e otimizar várias tarefas repetitivas presentes no desonvolvimento. As anotações são registradas no código binário da classe, ou seja, mesmo após a compilação, podem ser recuperadas por meio da reflexão.
+
+# Alguns tipos de anotações:
+@Deprecated -> Marca o método anotado como depreciado, que não deveria ser utilizado. Se outra classe empregar esse método, o compilador gerará um aviso correspondente.
+@FunctionalInterface -> Indica que a interface é funcional, contém apenas um método abstrato.
+@Override -> Indica que o método anotado sobrepõe outro existente em sua superclasse. O compilador gera erro caso não ocorra a sobreposição.
+@SafeVarargs -> Confirma que o tipo dos argumentos variáveis é seguro.
+@SupressWarnings -> Ordena que o compilador suprima os avisos gerados por um elemento (classe, método ou diretiva) e seus subelementos. Há conjuntos específicos de avisos que podem ser suprimidos, por exemplo: deprecation, hiding, rawtype, serial, unchecked, unused.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

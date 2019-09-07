@@ -1,0 +1,195 @@
+### Anotações Sobre Python
+
+## Escrever na tela
+print("Hello Word")
+
+## Gravar valor em uma variavel
+int = 10
+
+## Tipos de variaveis
+int = 10
+float = 1.52
+boolean = True
+
+## Mudar o valor da variavel
+int = 10
+int = 20
+
+## Declaração de uma função
+def function()
+	int = 10
+	return int
+
+## Valores Boleanos
+verdade = True
+falso = False
+
+## Comentarios
+# Depois do hashtag eu escrevo meu comentario
+
+## Comentarios extensos
+""" texto """
+
+## Operações Aritimeticas
+adicao = 72 + 38
+subtracao = 10 - 20
+multiplicacao = 12 * 12
+divisao = 24 / 4
+
+## Números Elevados a Expoentes
+eigth = 2 ** 3
+
+## Retorno do resto de uma divisão
+3 % 2 # Neste caso e retornado o valor 1
+
+## Formatacao de string com duas casas decimais
+print("%.2f" % variavel)
+
+## Variavel recebendo strings
+nome = "Isaque"
+
+## Apostrofe em uma string
+'There\'s my cat'
+
+## Buscar um caractere pelo indice de uma string
+name = "Nilza"[1]
+print(name) -> i
+
+## Contar o número de caracteres em uma string
+name = "Nilza"
+print(len(name)) -> 5
+
+## Transformar todo conteudo de uma string em letras minusculas
+name = "Nilza"
+print(name.lower()) -> nilza
+
+## Transformar todo conteudo de uma string em letras maiusculas
+name = "Nilza"
+print(name.upper()) -> NILZA
+
+## Transformar um valor inteiro ou ponto flutuante em string
+pi = 3.14
+print(str(pi))
+
+## Concatenacao de string
+print("Deus " + "e " + "Bom ");
+
+## Concatenacao de strings com o metodo str()
+pi = 3.14
+print("O valor do pi e : " + str(pi))
+
+## Formatacao de strings com o %
+rua = "Quatro"
+bairro = "Teresa"
+print("Eu moro no bairro %s, na rua %s ." % (rua, bairro))
+
+## Exibir mensagem no console e grava-lá em uma variavel
+nome = raw_input("Qual é o seu nome ?")
+
+## Importar biblioteca datatime
+from datetime import datetime
+
+## Granvando a hora atual em uma string
+agora = datetime.now()
+
+## Exibindo separadamente ano, mes e dia
+now = datetime.now()
+print(now.year)
+print(now.month)
+print(now.day)
+
+## Formatando a data em dd/mm/yyyy
+now = datetime.now()
+print("Hoje é : %s/%s/%s" % (now.day, now.month, now.year))
+
+## Formatando a hora em hh:mm:ss
+now = datetime.now()
+print("São exatamente : %s:%s:%s" % (now.hour, now.minute, now.second))
+
+## Formatando a data completa
+now = datetime.now()
+print("Data : %s/%s/%s %s:%s:%s" % (now.day, now.month, now.year, now.hour, now.minute, now.second))
+
+## Comparadores de fluxo
+Igual a "=="
+Diferente de "!="
+Menor que "<"
+Menor ou igual a "<="
+Maior que ">"
+Maior ou igual a ">="
+
+## Operadores Boleanos
+and = retorna verdadeiro quando as informações dos dois lados do and são verdadeiras. Ex: 10 * 2 and 10 + 10
+or = retorna verdadeiro quando uma das informações dos dois lados do and são verdadeiras.
+not = retorna True para declarações falsas e False para declarações verdadeiras
+
+## Sequencia dos operadores logicos
+not, and e or
+
+## Condicionais
+if - se
+else - senão
+elif - elseif - senão se
+
+## Entrada de Dados
+raw_input("String")
+ex: teste = raw_input("Insira uma palavra :")
+
+## Verificação de números em uma string
+.isalpha()
+
+## Obtendo um valor de uma string apartir de uma determinada posição
+new = 'Isaque'
+new[1:4] -> saq
+
+## Definição de Funções
+def nome_função(parametros):
+	"""Comentários"""
+	comnado
+	
+## Chamada da função
+função(parametro)
+
+## Função com multi parametros
+função(param1, param2, param3)
+
+## Função chamando função
+def function1(n):
+	return n + 1
+
+def function2():
+	return function1(n) + 1
+	
+## Importar Biblioteca Matemática
+import math
+
+## Função para exibição de raiz quadrada
+math.sqrt(num)
+
+## Importar uma função especifica de um modulo
+from modulo import funcao
+
+## Importação universal
+from modulo import *
+
+## Função para buscar o maior número do conjunto
+max(numeros inteiros, numeros com ponto flutuante)
+
+## Função para retornar o menor número do conjunto
+min(numeros inteiros, numeros com pontos flutuantes)
+
+## Função para retornar o modulo do número. (Distancia do número ao número 0)
+abs(numero)
+
+## Função para retornar o tipo de dado que recebeu. (int, float, bool etc)
+print type(valor)
+
+## Listas, arrays
+numbers = [5, 6, 7, 8]
+strings = ["Isaque", "Teste", "Debora"]
+
+## Acessando um dado de uma lista
+numbers = [5, 6, 7, 8]
+print(numbers[1]) ~> 5
+
+
