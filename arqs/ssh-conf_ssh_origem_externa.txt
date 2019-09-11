@@ -1,0 +1,10 @@
+### Configuração de Permissão para Chaves ssh Copiadas de Outro Computador
+
+# Após a cópia, altere a permissão das chaves para 0600
+chmod 600 <chave_ssh>
+
+# Adicione a chave na lista de chaves ssh
+ssh-add
+
+# Listar chaves ssh listadas
+ssh-add -l
