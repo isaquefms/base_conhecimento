@@ -1,0 +1,10 @@
+### Como apagar versões antigas do Kernel no Void Linux
+
+# Listar o Kernel Atual
+uname -a
+
+# Listar os Kernels disponíveis
+sudo vkpurge list
+
+# Apagar um Kernel
+sudo vkpurge rm <versão_do_kernel>
