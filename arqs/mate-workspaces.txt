@@ -1,0 +1,7 @@
+### Utilizando Workspaces no Mate
+
+# Para trocar entre workspaces
+Ctrl + Alt + (left or right)
+
+# Para Levar um aplicativo para outro workspace
+Ctrl + Alt + Shift + (left or right)
