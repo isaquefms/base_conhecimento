@@ -1,0 +1,4 @@
+### Baixar uma branch remota para o repositório local.
+
+# Execute
+    git checkout -b <newlocalbranch> origin/<remotebranch>
