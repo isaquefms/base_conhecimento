@@ -1,0 +1,10 @@
+### Alterar a URL do origin
+
+# Veja os endereços anteriores que estão sendo utilizados
+    - git remote -v
+    
+# Altere a URL com o git set-url
+    - git remote set-url origin <nova_url>
+    
+# Verifique a nova URL
+    - git remote -v
